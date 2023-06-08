@@ -7,6 +7,10 @@
 
 Quick summary: We generate random point sets and compute their convex hulls using qhull. Compare the timings for computing the convex hulls as the dimension and the set of points increases and draw parallels of qhull's operations to the lecture.
 
+Resources:
+- rbox: http://www.qhull.org/html/rbox.htm
+
+
 ## Convex hull timings
 
 ### Random points in the unit cube centered at the origin
@@ -14,7 +18,7 @@ Quick summary: We generate random point sets and compute their convex hulls usin
 Command: `rbox X DY | qconvex s` with `X` as the amount of points and `Y` as number of dimensions
 
 Results:
-|Dimension|Points|Timing|Distance tests for qhull|
+|Dimension (Y)|Points (X)|Timing|Distance tests for qhull|
 |---|---|---|---|
 |2|10|0|51|
 |2|100|0|648|
@@ -66,7 +70,32 @@ Results:
 |8|1000000|-|-|
 |8|10000000|-|-|
 
+## Random points along a spiral in 3D
 
+Command: `rbox l X | qconvex s` with `X` as the amount of points
+
+Results:
+|Points (X)|Timing|Distance tests for qhull|
+|---|---|---|
+|10|0|39|
+|100|0|1168|
+|1000|0.001|17049|
+|10000|0.014|222074|
+|100000|0.151|2715508|
+
+## Random points on a 4D sphere
+
+Command: `rbox X s D4 | qconvex s` with `X` as the amount of points
+
+Results:
+|Points (X)|Timing|Distance tests for qhull|
+|---|---|---|
+|10|0|75|
+|100|0.001|4090|
+|1000|0.001|65991|
+|10000|0.129|878388|
+|100000|1.612|10602719|
+|1000000|19.11|121227723|
 
 
 
