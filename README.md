@@ -18,6 +18,9 @@ Resources:
 Command: `rbox X DY | qconvex s` with `X` as the amount of points and `Y` as number of dimensions
 
 Results:
+
+![](cube_distance.png)
+![](cube_timing.png)
 |Dimension (Y)|Points (X)|Timing|Distance tests for qhull|
 |---|---|---|---|
 |2|10|0|51|
@@ -75,6 +78,8 @@ Results:
 Command: `rbox l X | qconvex s` with `X` as the amount of points
 
 Results:
+
+![](spiral.png)
 |Points (X)|Timing|Distance tests for qhull|
 |---|---|---|
 |10|0|39|
@@ -88,6 +93,8 @@ Results:
 Command: `rbox X s D4 | qconvex s` with `X` as the amount of points
 
 Results:
+
+![](sphere.png)
 |Points (X)|Timing|Distance tests for qhull|
 |---|---|---|
 |10|0|75|
