@@ -10,6 +10,12 @@ Quick summary: We generate random point sets and compute their convex hulls usin
 Resources:
 - rbox: http://www.qhull.org/html/rbox.htm
 
+## How it works
+
+Example Output:
+![](qhull_example.png)
+
+
 
 ## Convex hull timings
 
