@@ -19,7 +19,8 @@ Example Output:
 What we see:
 
 - Qhull found 15 points composing 15 lines (facets) representing the convex hull
-- Qhull generated 28 hyperplanes (lines) between points with which the point in polygon test is done with a max distance point from that line, as points inside that spanning triangle must lie within the convex hull
+- Qhull generated 28 hyperplanes (lines) between points that represent the *divide and conquer* approach of the algorithm
+- With these these hyperplanes, the point in polygon test is done with a max distance point from that line, as points inside that spanning triangle must lie within the convex hull
 - The number of max distance tests mentioned before are printed by Qhull aswell, in this case, 648 checks had to be performed
 
 ## Convex hull Timing (s)
