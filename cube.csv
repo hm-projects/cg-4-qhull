@@ -1,4 +1,4 @@
-﻿Dimension (Y),Points (X),Timing,Distance tests for qhull
+﻿Dimension (Y),Points (X),Timing (s),Distance tests for qhull
 2,10,0,51
 2,100,0,648
 2,1000,0,6596

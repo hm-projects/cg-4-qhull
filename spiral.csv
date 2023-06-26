@@ -1,4 +1,4 @@
-﻿Points (X),Timing,Distance tests for qhull
+﻿Points (X),Timing (s),Distance tests for qhull
 10,0,39
 100,0,1168
 1000,0.001,17049

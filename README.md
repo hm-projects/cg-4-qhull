@@ -5,7 +5,7 @@
 
 ## Quick Overview
 
-Quick summary: We generate random point sets and compute their convex hulls using qhull. Compare the timings for computing the convex hulls as the dimension and the set of points increases and draw parallels of qhull's operations to the lecture.
+Quick summary: We generate random point sets and compute their convex hulls using qhull. Compare the Timing (s)s for computing the convex hulls as the dimension and the set of points increases and draw parallels of qhull's operations to the lecture.
 
 Resources:
 - rbox: http://www.qhull.org/html/rbox.htm
@@ -13,11 +13,25 @@ Resources:
 ## How it works
 
 Example Output:
+
 ![](qhull_example.png)
 
+What we see:
+
+- Qhull found 15 points composing 15 lines (facets) representing the convex hull
+- Qhull generated 28 hyperplanes (lines) between points with which the point in polygon test is done with a max distance point from that line, as points inside that spanning triangle must lie within the convex hull
+- The number of max distance tests mentioned before are printed by Qhull aswell, in this case, 648 checks had to be performed
+
+## Convex hull Timing (s)s
+
+General Overview:
+
+All plots show a linear increase of distance tests and Timing (s) with increasing input size of either dimensions, points or both.
+
+Qhull's complexity in average is considered to be $O\left( n \cdot log \left( n\right)  \right )$.
 
 
-## Convex hull timings
+NOTE: tables have `-` as mark when the qhull run for that configuration took way too long that we had to abort.
 
 ### Random points in the unit cube centered at the origin
 
@@ -27,7 +41,7 @@ Results:
 
 ![](cube_distance.png)
 ![](cube_timing.png)
-|Dimension (Y)|Points (X)|Timing|Distance tests for qhull|
+|Dimension (Y)|Points (X)|Timing (s)|Distance tests for qhull|
 |---|---|---|---|
 |2|10|0|51|
 |2|100|0|648|
@@ -86,7 +100,7 @@ Command: `rbox l X | qconvex s` with `X` as the amount of points
 Results:
 
 ![](spiral.png)
-|Points (X)|Timing|Distance tests for qhull|
+|Points (X)|Timing (s)|Distance tests for qhull|
 |---|---|---|
 |10|0|39|
 |100|0|1168|
@@ -101,7 +115,7 @@ Command: `rbox X s D4 | qconvex s` with `X` as the amount of points
 Results:
 
 ![](sphere.png)
-|Points (X)|Timing|Distance tests for qhull|
+|Points (X)|Timing (s)|Distance tests for qhull|
 |---|---|---|
 |10|0|75|
 |100|0.001|4090|
