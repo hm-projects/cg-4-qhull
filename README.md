@@ -8,7 +8,7 @@
 Quick summary: We generate random point sets and compute their convex hulls using qhull. Compare the Timing (s)s for computing the convex hulls as the dimension and the set of points increases and draw parallels of qhull's operations to the lecture.
 
 Resources:
-- rbox: http://www.qhull.org/html/rbox.htm
+- rbox: http://www.qhull.org/html/rbox.html
 
 ## How it works
 
@@ -22,14 +22,13 @@ What we see:
 - Qhull generated 28 hyperplanes (lines) between points with which the point in polygon test is done with a max distance point from that line, as points inside that spanning triangle must lie within the convex hull
 - The number of max distance tests mentioned before are printed by Qhull aswell, in this case, 648 checks had to be performed
 
-## Convex hull Timing (s)s
+## Convex hull Timing (s)
 
 General Overview:
 
 All plots show a linear increase of distance tests and Timing (s) with increasing input size of either dimensions, points or both.
 
 Qhull's complexity in average is considered to be $O\left( n \cdot log \left( n\right)  \right )$.
-
 
 NOTE: tables have \``-`\` as mark when the qhull run for that configuration took way too long that we had to abort.
 
