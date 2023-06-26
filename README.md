@@ -31,7 +31,7 @@ All plots show a linear increase of distance tests and Timing (s) with increasin
 Qhull's complexity in average is considered to be $O\left( n \cdot log \left( n\right)  \right )$.
 
 
-NOTE: tables have `-` as mark when the qhull run for that configuration took way too long that we had to abort.
+NOTE: tables have \``-`\` as mark when the qhull run for that configuration took way too long that we had to abort.
 
 ### Random points in the unit cube centered at the origin
 
