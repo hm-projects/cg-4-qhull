@@ -16,6 +16,8 @@ Example Output for `rbox 100 D2 | qconvex s`:
 
 ![](qhull_example.png)
 
+The points plotted created by `rbox 100 D2`:
+
 ![](plot_output.png)
 
 What we see:
