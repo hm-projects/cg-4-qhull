@@ -12,7 +12,7 @@ Resources:
 
 ## How it works
 
-Example Output:
+Example Output for `rbox 100 D2 | qconvex s`:
 
 ![](qhull_example.png)
 
