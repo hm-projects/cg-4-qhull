@@ -5,10 +5,12 @@
 
 ## Quick Overview
 
-Quick summary: We generate random point sets and compute their convex hulls using qhull. Compare the Timing (s)s for computing the convex hulls as the dimension and the set of points increases and draw parallels of qhull's operations to the lecture.
+Quick summary: We generate random point sets and compute their convex hulls using [qhull](http://www.qhull.org/). We also compare the Timings (s) for computing convex hulls with [qhull](http://www.qhull.org/) as the dimension and the set of points increases and draw parallels of [qhull](http://www.qhull.org/)'s operations to the lecture.
 
 Resources:
 - rbox: http://www.qhull.org/html/rbox.html
+- qhull: http://www.qhull.org/
+- geomview: http://www.geomview.org/
 
 ## How it works
 
@@ -40,9 +42,7 @@ What we see:
 
 General Overview:
 
-All plots show a linear increase of distance tests and Timing (s) with increasing input size of either dimensions, points or both.
-
-Qhull's complexity in average is considered to be $O\left( n \cdot log \left( n\right)  \right )$.
+All plots show a linear increase of distance tests and Timing (s) with increasing input size of either dimensions, points or both. As qhull's complexity in average is considered to be $O\left( n \cdot log \left( n\right)  \right )$, this result was expected.
 
 NOTE: tables have \``-`\` as mark when the qhull run for that configuration took way too long that we had to abort.
 
