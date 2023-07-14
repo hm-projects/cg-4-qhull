@@ -16,9 +16,18 @@ Example Output for `rbox 100 D2 | qconvex s`:
 
 ![](qhull_example.png)
 
+<details>
+
 The points plotted created by `rbox 100 D2` which `qconvex` tries to find a convex hull for:
 
-![](plot_output.png)
+![](qhull_example_points_plot.png)
+
+We also used [geomview](http://www.geomview.org/) to have the resulting convex hull from `qconvex` from the point set above be visualized:
+
+![](qhull_example_geomview.png)
+(Unfortunately, we did not manage to have the points also be visualized at the same time)
+</details>
+
 
 What we see:
 
