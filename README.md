@@ -16,6 +16,8 @@ Resources:
 
 Example Output for `rbox 100 D2 | qconvex s`:
 
+NOTE: `qconvex` is de-facto `qhull`
+
 ![](qhull_example.png)
 
 <details>
