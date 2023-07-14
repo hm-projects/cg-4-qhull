@@ -16,6 +16,8 @@ Example Output:
 
 ![](qhull_example.png)
 
+![](plot_output.png)
+
 What we see:
 
 - Qhull found 15 points composing 15 lines (facets) representing the convex hull
