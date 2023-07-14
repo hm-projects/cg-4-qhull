@@ -3,6 +3,8 @@
 - Nicolas Bissig
 - Antonino Grasso
 
+Source code is found in GitHub: <https://github.com/hm-projects/cg-4-qhull>
+
 ## Quick Overview
 
 Quick summary: We generate random point sets and compute their convex hulls using [qhull](http://www.qhull.org/). We also compare the Timings (s) for computing convex hulls with [qhull](http://www.qhull.org/) as the dimension and the set of points increases and draw parallels of [qhull](http://www.qhull.org/)'s operations to the lecture.
